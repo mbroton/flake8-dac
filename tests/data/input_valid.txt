@@ -1,0 +1,7 @@
+../path/path.py:16:80: E501 line too long (93 > 79 characters)
+../path/path/path.py:21:1: W293 blank line contains whitespace
+../path/path/path.py:28:39: W292 no newline at end of file
+../path/path/path/path/path.py:28:1: W293 blank line contains whitespace
+../path/path/path/path/path.py:37:1: W391 blank line at end of file
+../path/path/path/path/path.py:34:80: E501 line too long (81 > 79 characters)
+../path/path/path/path/path.py:1:1: F401 'some.Class' imported but unused
