@@ -8,11 +8,11 @@ The "dac" part in tool's name stands for "divide and conquer".
 
 ### flake8 output with flake8-dac formatting
 
-- Grouped by the type of cause.
+- Grouped by the type of cause (with number of occurrences).
 - Sorted by the number of occurrences (descending).
-- Information about number of problems
-- Rich text and formatting
-- Link to flake8rules.com (where you can find more details about the problem)
+- Information about number of problems.
+- Rich text and formatting.
+- Link to flake8rules.com (where you can find more details about the problem).
 
 ![after](https://user-images.githubusercontent.com/50829834/201550776-119d4d52-7244-4672-9b4e-56d58b7e13aa.png)
 
