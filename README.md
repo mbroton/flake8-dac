@@ -2,11 +2,7 @@
 Tool for formatting flake8's results in more readable way, in case there's a lot of them.
 The "dac" part in tool's name stands for "divide and conquer".
 
-### flake8 output
-
-![before](https://user-images.githubusercontent.com/50829834/201550788-35ccaf54-343d-4b3e-812c-498fd1f82dd4.png)
-
-### flake8 output with flake8-dac formatting
+### flake8 output with flake8-dac formatting example
 
 - Grouped by the type of cause (with number of occurrences).
 - Sorted by the number of occurrences (descending).
@@ -15,6 +11,10 @@ The "dac" part in tool's name stands for "divide and conquer".
 - Link to flake8rules.com (where you can find more details about the problem).
 
 ![after](https://user-images.githubusercontent.com/50829834/201550776-119d4d52-7244-4672-9b4e-56d58b7e13aa.png)
+
+### flake8 output example
+
+![before](https://user-images.githubusercontent.com/50829834/201550788-35ccaf54-343d-4b3e-812c-498fd1f82dd4.png)
 
 
 ## Installation
