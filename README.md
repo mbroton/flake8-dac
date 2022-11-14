@@ -12,6 +12,7 @@ The "dac" part in tool's name stands for "divide and conquer".
 - Sorted by the number of occurrences (descending).
 - Information about number of problems
 - Rich text and formatting
+- Link to flake8rules.com (where you can find more details about the problem)
 
 ![after](https://user-images.githubusercontent.com/50829834/201550776-119d4d52-7244-4672-9b4e-56d58b7e13aa.png)
 
