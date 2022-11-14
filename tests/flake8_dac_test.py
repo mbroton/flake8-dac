@@ -3,7 +3,7 @@ from __future__ import annotations
 import contextlib
 import io
 
-import gruper
+import flake8_dac
 
 
 def test_valid_stdin():
@@ -12,8 +12,8 @@ def test_valid_stdin():
 
         out = io.StringIO()
         with contextlib.redirect_stdout(out):
-            d = gruper.group(inp.readlines())
-            gruper.dac_print(d)
+            d = flake8_dac.group(inp.readlines())
+            flake8_dac.dac_print(d)
 
         model = stack.enter_context(open('tests/data/output_valid.txt'))
         assert out.getvalue() == ''.join(model.readlines())
@@ -25,14 +25,14 @@ def test_stdin_with_no_matches():
 
         out = io.StringIO()
         with contextlib.redirect_stdout(out):
-            d = gruper.group(inp.readlines())
-            gruper.dac_print(d)
+            d = flake8_dac.group(inp.readlines())
+            flake8_dac.dac_print(d)
 
         assert out.getvalue() == 'Found 0 problems\n'
 
 
 def test_get_rule_url():
-    url = gruper.get_rule_url('G123')
+    url = flake8_dac.get_rule_url('G123')
     expected = 'https://www.flake8rules.com/rules/G123.html'
     assert url == expected
 
@@ -59,6 +59,6 @@ def test_groupping_and_sorting():
             out.items(), key=lambda item: len(item[1]), reverse=True,
         )
     }
-    actual = gruper.group(inp.splitlines())
+    actual = flake8_dac.group(inp.splitlines())
     assert actual == out
     assert list(actual) == list(out)
