@@ -19,11 +19,15 @@ The "dac" part in tool's name stands for "divide and conquer".
 
 ## Installation
 
-```pip install flake8-dac```
+```
+pip install flake8-dac
+```
 
 ## Usage
 
-```flake8 [args] | flake8-dac```
+```
+flake8 [args] | flake8-dac
+```
 
 ## Why?
 
