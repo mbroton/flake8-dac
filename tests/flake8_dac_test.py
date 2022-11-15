@@ -3,7 +3,7 @@ from __future__ import annotations
 import contextlib
 import io
 
-import flake8_dac
+from flake8_dac import formatting as flake8_dac
 
 
 def test_valid_stdin():

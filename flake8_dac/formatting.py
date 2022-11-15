@@ -1,9 +1,6 @@
 from __future__ import annotations
 
-import os
 import re
-import sys
-import typing
 
 from rich import print
 from rich.console import Console
@@ -55,18 +52,3 @@ def dac_print(data: GroupedDict) -> None:
 
         total += len(matches)
     print(f"Found {total} problems")
-
-
-def main(stream: typing.IO) -> int:
-    is_pipe = not os.isatty(stream.fileno())
-    if not is_pipe:
-        print("Usage: flake8 [args] | flake8-dac")
-        return 1
-
-    groupped = group(stream.readlines())
-    dac_print(groupped)
-    return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main(sys.stdin))
